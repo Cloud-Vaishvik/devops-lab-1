@@ -1,0 +1,14 @@
+# Reinstallable from package-lock.json
+node_modules/
+
+# Produced by the pipeline's Package / Test / Deploy stages
+dist/
+reports/
+staging/
+app/VERSION
+
+# Editor / OS noise
+.vscode/
+__pycache__/
+*.pyc
+.DS_Store

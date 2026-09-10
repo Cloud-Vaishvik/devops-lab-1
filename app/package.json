@@ -1,0 +1,19 @@
+{
+  "name": "devops-lab1-app",
+  "version": "1.0.0",
+  "description": "Sample Node.js app for Lab 1 - DevOps Foundations & Continuous Integration",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "lint": "node --check src/server.js && node --check test/server.test.js",
+    "test": "node --test",
+    "test:ci": "node --test --test-reporter=junit --test-reporter-destination=../reports/junit.xml --test-reporter=spec --test-reporter-destination=stdout"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "engines": {
+    "node": ">=20.11"
+  },
+  "license": "MIT"
+}
